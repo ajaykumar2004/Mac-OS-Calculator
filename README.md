@@ -7,6 +7,6 @@ This is app like interface calculator which can work in any iperating system.
 
 2. Using node package manager download electron and express libraries.
 
-** set your main/start file as index js in package file.
+** set your main/start file as main.js in package file.
 
 3. Type npm electron . to run the calculator.
