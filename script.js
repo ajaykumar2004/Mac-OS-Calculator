@@ -20,6 +20,7 @@ buttons.forEach((button)=>
             display.innerText=-1 * display.innerText;
         }
         else if(target.id=="percent"){
+            currentOperand = parseFloat(display.innerText)/100;
             display.innerText=parseFloat(display.innerText)/100;
         }
         else if(target.id=="divide" || target.id=="sub" || target.id=="add" ||target.id=="multiply"){
@@ -37,7 +38,7 @@ buttons.forEach((button)=>
                     firstOperand=firstOperand-secondOperand;
                 }
                 else if(operator==="x"){
-                    firstOperand=firstOperand*secondOperand;
+                    firstOperand=parseFloat(firstOperand*secondOperand).toFixed(3);
                 }
                 else if(operator==="÷"){
                     firstOperand=firstOperand/secondOperand;
@@ -52,6 +53,7 @@ buttons.forEach((button)=>
                 return;
             }
             currentOperand+=value;
+            console.log(currentOperand);
             display.innerText=currentOperand;
         }
     });
