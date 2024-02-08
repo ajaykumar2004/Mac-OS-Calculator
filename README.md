@@ -10,3 +10,5 @@ This is app like interface calculator which can work in any iperating system.
 ** set your main/start file as main.js in package file.
 
 3. Type npm electron . to run the calculator.
+
+Update : Bug fixed in decimal multiplication
